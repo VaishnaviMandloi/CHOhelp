@@ -5,7 +5,7 @@ body{
 }
 
 .bgimg{
-    background-image: url("background.webp");
+    background-image: url("background.png");
     min-height: 380px;
     height: 100vh;
     background-position: center ;
@@ -15,11 +15,29 @@ body{
     padding: 12px;
 }
 
+.top{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    margin: 10px;
+    padding: 10px;
+    text-shadow: 0 0 10px rgb(250, 12, 12);
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header i{
+    padding: 0 6px;
+}
+
 .navbar{
     margin-top: 10px;
     overflow: hidden;
     padding: 0 12px;
-    width: 99%;
+    width: 74%;
 }
 
 .navbar a{
@@ -37,6 +55,20 @@ body{
     transition: box-shadow .3s ease-out;
 }
 
+@media screen and (max-width: 600px) {
+    .navbar{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
 .navbar a:hover{
     background-color: rgb(235, 45, 45);
     color: aliceblue;
@@ -49,7 +81,7 @@ footer{
     left: 0;
     right: 0;
     background: #111;
-    height: 18vh;
+    height: 21vh;
     width: 100vw;
     padding:10px 0 10px;
     color: #fff;
@@ -74,7 +106,7 @@ footer{
     text-transform: capitalize;
     line-height: 3rem;
     color: #fff;
-    padding: 4px 8px;
+    padding: 0px 8px;
     text-decoration: none;
     transition: color .4s ease;
 
