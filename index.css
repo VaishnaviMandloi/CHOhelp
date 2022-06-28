@@ -29,6 +29,7 @@ header{
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 header i{
     padding: 0 6px;
 }
@@ -40,7 +41,7 @@ header i{
     width: 74%;
 }
 
-.navbar a{
+ .navbar a{
     float: right;
     color: crimson;
     text-align: center;
@@ -53,36 +54,52 @@ header i{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     transition: box-shadow .3s ease-out;
-}
+ }
 
 .navbar .icon{
     display: none;
 }
 
 @media screen and (max-width: 600px) {
-    .navbar{
-        width: 60%;
+    .navbar a:not(:first-child) {
+        display: none;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
       display: block;
     }
+
+    .navbar{
+        width: 60%;
+    }
+
+}  
+
+  .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-}
+  .responsive {
+    margin-left: 20%;
+    position: relative;
+    width: 47% ;
+  }
 
-.navbar a:hover{
+  .responsive a {
+    display: block;
+    color: crimson;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: aliceblue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.navbar a:hover,.responsive a:hover {
     background-color: rgb(235, 45, 45);
     color: aliceblue;
     box-shadow: 8px 8px  rgba(242, 239, 239, 0.948);
