@@ -7,3 +7,11 @@ function openbar(){
         x.className="navbar";
     }
 }
+
+function loginOpen(){
+    document.getElementById('loginform').style.display='block';
+}
+
+function loginClose(){
+    document.getElementById('loginform').style.display='none';
+}

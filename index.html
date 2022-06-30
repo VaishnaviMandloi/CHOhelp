@@ -17,9 +17,33 @@
                 <a href="javascript:void(0);" class="icon" onclick="openbar()"><i class="fa fa-bars"></i></a>
                 <a href="home.html" class="navitem">HOME</a>
                 <a href="work.html" class="navitem">WORK</a>
+                <a class="navitem" onclick="loginOpen()">LOGIN</a>
                 <a href="contact.html" class="navitem">CONTACT</a>
                 <a href="about.html" class="navitem">ABOUT</a>
             </nav>
+        </div>
+
+        <div id="loginform" class="login">
+
+        <form class="loginContentAnimate" action="#" method="post">
+                <span class="logincross" onclick="loginClose()" title="Close Login Page" >&times;</span>
+
+            <div class="loginContainer" >
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label><input type="checkbox" checked="checked" name="remember">Remember me</label>
+            </div>
+
+            <div class="loginContainer" >
+            <button type="button" onclick="loginClose()" class="closebtn">Close</button>
+            <span class="psw"><a href="#">Forgot Password ?</a></span>
+            </div>
+        </form>
         </div>
 
         <footer class="confooter">
