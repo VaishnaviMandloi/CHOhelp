@@ -15,3 +15,11 @@ function loginOpen(){
 function loginClose(){
     document.getElementById('loginform').style.display='none';
 }
+
+var modal = document.getElementById('loginform');
+
+window.onclick = function(event){
+    if (event.target==modal){
+        modal.style.display="none";
+    }
+}
