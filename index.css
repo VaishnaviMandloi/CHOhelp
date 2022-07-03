@@ -199,6 +199,11 @@ button:hover{
     background-color: red;
 }
 
+.crossContainer{
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
 .loginContainer{
     padding: 16px;
 }
@@ -229,3 +234,36 @@ span.psw {
     width: 80%;
 }
 
+.logincross{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logincross:hover, .logincross:focus{
+    color: crimson;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s ;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+@media screen and (max-width: 300px){
+    span.psw{
+        display: block;
+        float: none;
+    }
+    .closebtn{
+        width: 100%;
+    }
+}
